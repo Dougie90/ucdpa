@@ -1,9 +1,9 @@
-
-
+  
 .nav {
-  background-color: #ff0000;
+  background-color: rgba(246, 246, 4, 0.7);
   padding: 10px;
   text-align: center;
+  text-decoration: underline;
 
 }
 .nav a {
@@ -15,7 +15,7 @@
 
 h1 {
   text-align: center;
-  color: #333333;
+  color: #c1f603;
 }
 
 body {
@@ -26,10 +26,11 @@ body {
 }
 footer
 {
-  text-align: center;
+  text-align: left;
   padding: 10px;
-  background-color: #ff0000;
-  margin-top: 20px;
+  
+  margin-top: 50px;
+  margin-left: 20px;
 }
 .about {
   background-image: url(phone.jpg);
@@ -47,8 +48,10 @@ footer
   padding: 20px;
   border-radius: 10px;
 }
-.container {
- 
+
+
+
+
 input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
@@ -83,3 +86,27 @@ input[type=submit]:hover {
 }
 
 
+.box1 {
+  display: grid;
+  background-color: #ff9999;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 500px;
+  border-radius: 5px;
+}
+.box2 {
+  display: grid;
+  background-color: #99ff99;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 500px;
+  border-radius: 5px;
+}
+.box3 { 
+  display: grid;
+  background-color: #9999ff;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 500px;
+  border-radius: 5px;
+}
