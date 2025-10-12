@@ -13,9 +13,9 @@
   font-weight: bold;
 }
 
-h1 {
+h1 {  
   text-align: center;
-  color: #c1f603;
+  color: #000000;
 }
 
 body {
@@ -87,7 +87,7 @@ input[type=submit]:hover {
 
 
 .box1 {
-  display: grid;
+  display: flex;
   background-color: #ff9999;
   padding: 10px;
   margin: 10px;
@@ -95,7 +95,7 @@ input[type=submit]:hover {
   border-radius: 5px;
 }
 .box2 {
-  display: grid;
+  display: flex;
   background-color: #99ff99;
   padding: 10px;
   margin: 10px;
@@ -103,10 +103,30 @@ input[type=submit]:hover {
   border-radius: 5px;
 }
 .box3 { 
-  display: grid;
+  display: flexbox;
   background-color: #9999ff;
   padding: 10px;
   margin: 10px;
   margin-right: 500px;
   border-radius: 5px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #000000;
+background-image: url(phone.jpg);
+  color: #ffffff;
+}
+
+h2+p {
+  text-align: center;
+  font-style: italic;
+  color: #ff0000;
+}
+
+p {
+  line-height: 1.6;
+margin: 0 0 1.25em 0; 
+margin-bottom: 20px;
 }
