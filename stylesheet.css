@@ -60,7 +60,7 @@ input[type=text], select, textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
@@ -94,29 +94,64 @@ input[type=submit]:hover {
   margin-right: 500px;
   border-radius: 5px;
 }
-.box2 {
+
+
+.box-container {
   display: flex;
-  background-color: #99ff99;
-  padding: 10px;
-  margin: 10px;
-  margin-right: 500px;
-  border-radius: 5px;
-}
-.box3 { 
-  display: flexbox;
-  background-color: #9999ff;
-  padding: 10px;
-  margin: 10px;
-  margin-right: 500px;
-  border-radius: 5px;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  background-color: #000000;
-background-image: url(phone.jpg);
+
+.box1, .box2, .box3 {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 15px;
+  
+  
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box1:hover, .box2:hover, .box3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+}
+
+.box1 {
+  border-left: 4px solid #ff9999;
+}
+
+.box2 {
+  border-left: 4px solid #99ff99;
+}
+.box3 { 
+  border-left: 4px solid #9999ff;
+}
+
+.box1 a, .box2 a, .box3 a {
   color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+}
+
+.box1 a:hover, .box2 a:hover, .box3 a:hover {
+  color: #f6f604;
 }
 
 h2+p {
