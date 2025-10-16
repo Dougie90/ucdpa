@@ -1,3 +1,41 @@
+p /* Main content container for spacing */
+.main-container {
+  margin-top: 40px;
+}
+
+/* Main section titles */
+.main-title {
+  color: #ffcc33;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/* Alternate main title for contact page */
+.main-title-alt {
+  color: #232526;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/* Main description paragraphs */
+.main-desc {
+  text-align: center;
+  font-size: 1.08em;
+  margin-bottom: 10px;
+}
+
+/* List title for main section */
+.main-list-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.15em;
+  color: #ffcc33;
+  margin-bottom: 20px;
+}
   
 .nav {
   background-color: rgba(246, 246, 4, 0.7);
@@ -19,18 +57,20 @@ h1 {
 }
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  background-color: #000000;
-  color: #ffffff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  color: #f5f5f5;
+  min-height: 100vh;
 }
-footer
-{
-  text-align: left;
-  padding: 10px;
-  
+footer {
+  text-align: center;
+  padding: 20px 10px;
   margin-top: 50px;
-  margin-left: 20px;
+  background: rgba(30, 30, 30, 0.8);
+  color: #f5f5f5;
+  border-top: 1px solid #444;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
 }
 .about {
   background-image: url(phone.jpg);
@@ -86,22 +126,33 @@ input[type=submit]:hover {
 }
 
 
-.box1 {
-  display: flex;
-  background-color: #ff9999;
-  padding: 10px;
-  margin: 10px;
-  margin-right: 500px;
-  border-radius: 5px;
+.nav {
+  background: linear-gradient(90deg, #ffb347 0%, #ffcc33 100%);
+  padding: 18px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 0 0 20px 20px;
+}
+.nav a {
+  color: #232526;
+  margin: 0 18px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: color 0.2s;
 }
 
+.nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #f6f604;
+}
 
 .box-container {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  gap: 20px;
-  padding: 20px;
+  gap: 30px;
+  padding: 30px;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
